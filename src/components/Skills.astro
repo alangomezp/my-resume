@@ -1,1 +1,26 @@
-<h1>Skills</h1>
+---
+import Section from "./Section.astro";
+import Subtitle from "./Subtitle.astro";
+import { skills } from "@resume";
+import GetSkillIcon from "@/lib/skillsIcons";
+---
+
+<Section>
+  <Subtitle text="Skills" />
+  <article class="flex flex-row gap-5">
+    {
+      skills.map((skill) => {
+        return skill.keywords.map((item) => {
+          const Icon = GetSkillIcon(item.toLowerCase());
+
+          return (
+            <p class="flex text-sm gap-1 bg-zinc-300 text-black p-2 rounded-lg">
+              <span class="block w-5">{<Icon />}</span>
+              {item}
+            </p>
+          );
+        });
+      })
+    }
+  </article>
+</Section>

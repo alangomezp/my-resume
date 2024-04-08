@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Programmer",
-    "image": "",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
+    "name": "Alan Gomez",
+    "label": "Desarrollador Full Stack con mas de 7 anios en la industria.",
+    "image": "https://avatars.githubusercontent.com/alangomezp",
+    "email": "alanrgomezp@gmail.com",
+    "phone": "+1809-495-1109",
     "url": "https://johndoe.com",
     "summary": "A summary of John Doe…",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "C. Bartolome Frechi #5",
+      "postalCode": "11802",
+      "city": "Santo Domingo",
+      "countryCode": "DO",
+      "region": "Santo Domingo Este"
     },
     "profiles": [
       {
@@ -24,11 +24,20 @@
   },
   "work": [
     {
-      "name": "Company",
-      "position": "President",
+      "name": "Hipermercados Ole",
+      "position": "Desarrollador Senior",
       "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "startDate": "2017-01-01",
+      "endDate": "2021-01-01",
+      "summary": "Description…",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Multiquimica S.A.",
+      "position": "Desarrollador de Aplicaciones",
+      "url": "https://company.com",
+      "startDate": "2021-01-01",
+      "endDate": "Actual",
       "summary": "Description…",
       "highlights": ["Started the company"]
     }
@@ -46,12 +55,12 @@
   ],
   "education": [
     {
-      "institution": "University",
+      "institution": "Universidad APEC",
       "url": "https://institution.com/",
       "area": "Software Development",
       "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
+      "startDate": "2016-01-01",
+      "endDate": "2023-01-01",
       "score": "4.0",
       "courses": ["DB1101 - Basic SQL"]
     }
@@ -85,7 +94,7 @@
     {
       "name": "Web Development",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "keywords": ["HTML", "CSS", "JavaScript", "Astro"]
     }
   ],
   "languages": [
@@ -107,6 +116,38 @@
     }
   ],
   "projects": [
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016", "Html"],
+      "url": "https://project.com/"
+    },
     {
       "name": "Project",
       "startDate": "2019-01-01",

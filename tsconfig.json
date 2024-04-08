@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@resume": ["./resume.json"],
+      "@resume": ["src/resume.json"],
       "@/*": ["src/*"]
     }
   }

@@ -1,0 +1,25 @@
+---
+interface Props {
+  company: string;
+  position?: string;
+  from: string;
+  to: string;
+  description: string;
+}
+
+const { company, position, from, to, description } = Astro.props;
+const yearFrom = from.slice(0, 4);
+const yearTo = to.slice(0, 4);
+---
+
+<article class="my-2">
+  <div class="flex justify-between">
+    <h3 class="font-bold">{company}</h3>
+    <span class="text-[14px] font-sans text-zinc-400"
+      >{`${yearFrom} - ${yearTo}`}</span
+    >
+  </div>
+  <span class="text-sm font-bold">{position}</span>
+
+  <p>{description}</p>
+</article>

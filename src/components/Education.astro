@@ -1,1 +1,23 @@
-<h1>Education</h1>
+---
+import Item from "./Item.astro";
+import Section from "./Section.astro";
+import Subtitle from "./Subtitle.astro";
+import { education } from "@resume";
+---
+
+<Section>
+  <Subtitle text="Experience" />
+  {
+    education.map((item) => {
+      const { institution, studyType, startDate, endDate } = item;
+      return (
+        <Item
+          company={institution}
+          from={startDate}
+          to={endDate}
+          description={studyType}
+        />
+      );
+    })
+  }
+</Section>

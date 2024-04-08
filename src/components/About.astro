@@ -1,9 +1,16 @@
 ---
-import Title from "./Title.astro";
+import Subtitle from "./Subtitle.astro";
+import Section from "./Section.astro";
+import { basics } from "@/resume.json";
+
+const { summary } = basics;
 ---
 
-<section class="flex">
+<Section>
   <article>
-    <Title text="About" />
+    <Subtitle text="About" />
+    <p>
+      {summary}
+    </p>
   </article>
-</section>
+</Section>

@@ -1,1 +1,24 @@
-<h1>Experience</h1>
+---
+import Section from "./Section.astro";
+import Subtitle from "./Subtitle.astro";
+import { work } from "@resume";
+import Item from "./Item.astro";
+---
+
+<Section>
+  <Subtitle text="Experience" />
+  {
+    work.map((job) => {
+      const { name, position, startDate, endDate, summary } = job;
+      return (
+        <Item
+          company={name}
+          position={position}
+          from={startDate}
+          to={endDate}
+          description={summary}
+        />
+      );
+    })
+  }
+</Section>

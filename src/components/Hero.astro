@@ -5,29 +5,32 @@ import Github from "@/iconos/Github.astro";
 import Image from "astro/components/Image.astro";
 import Twitter from "@/iconos/Twitter.astro";
 import Title from "./Title.astro";
+import Globe from "@/iconos/Globe.astro";
 
 const { name, label, location } = basics;
 ---
 
-<section class="flex flex-row gap-5 p-5">
+<section class="flex flex-row p-5 w-full justify-between">
   <article>
     <Title text={name} />
     <p class="text-lg font-sans text-zinc-900">{label}</p>
-    <span class="text-zinc-500">
-      {`${location.city}, ${location.address}`}
+    <span class="flex flex-row gap-2 items-center text-zinc-500">
+      <span class="block w-4"><Globe /></span>{
+        `${location.city}, ${location.address}`
+      }
     </span>
     <div class="flex flex-row gap-4 py-1">
-      <a href="/#" class="w-6"><Twitter /> </a>
-      <a href="/#" class="w-6"><Instagram /> </a>
-      <a href="/#" class="w-6"><Github /> </a>
+      <a href="/#" class="w-6" aria-label="twitter"><Twitter /> </a>
+      <a href="/#" class="w-6" aria-label="instagram"><Instagram /> </a>
+      <a href="/#" class="w-6" aria-label="github"><Github /> </a>
     </div>
   </article>
   <Image
-    src="https://avatars.githubusercontent.com/alangomezp"
+    src={basics.image}
     alt="Github avatar"
     height={100}
     width={100}
     loading={"eager"}
-    class="max-h-24 aspect-auto object-cover rounded-full"
+    class="max-h-26 aspect-auto object-cover rounded-full"
   />
 </section>
