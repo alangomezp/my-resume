@@ -1,16 +1,33 @@
 ---
+import Instagram from "@/iconos/Instagram.astro";
 import { basics } from "../resume.json";
+import Github from "@/iconos/Github.astro";
+import Image from "astro/components/Image.astro";
+import Twitter from "@/iconos/Twitter.astro";
+import Title from "./Title.astro";
 
-const { name, label } = basics;
+const { name, label, location } = basics;
 ---
 
-<section>
-  <div>
-    <div>
-      <h1>{name}</h1>
-      <h2>{label}</h2>
+<section class="flex flex-row gap-5 p-5">
+  <article>
+    <Title text={name} />
+    <p class="text-lg font-sans text-zinc-900">{label}</p>
+    <span class="text-zinc-500">
+      {`${location.city}, ${location.address}`}
+    </span>
+    <div class="flex flex-row gap-4 py-1">
+      <a href="/#" class="w-6"><Twitter /> </a>
+      <a href="/#" class="w-6"><Instagram /> </a>
+      <a href="/#" class="w-6"><Github /> </a>
     </div>
-  </div>
+  </article>
+  <Image
+    src="https://avatars.githubusercontent.com/alangomezp"
+    alt="Github avatar"
+    height={100}
+    width={100}
+    loading={"eager"}
+    class="max-h-24 aspect-auto object-cover rounded-full"
+  />
 </section>
-
-<style></style>
