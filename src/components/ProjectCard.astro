@@ -1,4 +1,6 @@
 ---
+import Github from "@/iconos/Github.astro";
+
 interface Props {
   name: string;
   description: string;
@@ -9,17 +11,22 @@ interface Props {
 const { name, description, url, highlights } = Astro.props;
 ---
 
-<div class="border border-zinc-300 rounded-md p-3">
-  <a href={url}>{name}</a>
-  <p class="mb-10">{description}</p>
+<div class="relative border border-zinc-300 rounded-md p-3">
+  <a href={url} class="hover:underline hover:cursor-pointer"
+    >{name}
+    <span class="absolute w-5 ml-2"><Github /></span>
+  </a>
+  <p class="mb-10 mt-2">{description}</p>
 
-  {
-    highlights.map((item) => {
-      return (
-        <span class="text-[10px] bg-zinc-200 p-1 rounded-lg text-wrap">
-          {item}
-        </span>
-      );
-    })
-  }
+  <div class="absolute bottom-3">
+    {
+      highlights.map((item) => {
+        return (
+          <span class="text-[10px] bg-zinc-200 p-1 mx-1 rounded-lg text-wrap">
+            {item}
+          </span>
+        );
+      })
+    }
+  </div>
 </div>

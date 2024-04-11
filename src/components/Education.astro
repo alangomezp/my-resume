@@ -1,23 +1,31 @@
 ---
+import Certificates from "./Certificates.astro";
 import Item from "./Item.astro";
 import Section from "./Section.astro";
 import Subtitle from "./Subtitle.astro";
-import { education } from "@resume";
+import { education, certificates } from "@resume";
 ---
 
 <Section>
-  <Subtitle text="Experience" />
+  <Subtitle text="Educacion" />
   {
     education.map((item) => {
-      const { institution, studyType, startDate, endDate } = item;
+      const { institution, studyType, startDate, endDate, area } = item;
       return (
         <Item
           company={institution}
           from={startDate}
           to={endDate}
-          description={studyType}
+          description={area}
         />
       );
+    })
+  }
+  <h4 class="font-bold text-xl">Certificados</h4>
+  {
+    certificates.map((item) => {
+      const { name, date, issuer, url } = item;
+      return <Certificates name={name} date={date}, issuer={issuer} url={url} />;
     })
   }
 </Section>

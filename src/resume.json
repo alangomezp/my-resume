@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Alan Gomez",
-    "label": "Desarrollador Full Stack con mas de 7 anios en la industria.",
+    "label": "Desarrollador Full Stack con mas de 7 años en la industria.",
     "image": "https://avatars.githubusercontent.com/alangomezp",
     "email": "alanrgomezp@gmail.com",
     "phone": "+1809-495-1109",
     "url": "https://johndoe.com",
-    "summary": "A summary of John Doe…",
+    "summary": "Soy desarrollador web full stack experimentado con +7 años de experiencia práctica. Originario de la República Dominicana, una isla vibrante en el Caribe, traigo conmigo una pasión por el trabajo y un compromiso con la excelencia, enriquecido por mis valores cristianos. A lo largo de mi carrera, he tenido la oportunidad de trabajar con una amplia gama de tecnologías, incluyendo .NET, Angular, MS SQL, SAP ABAP, Restful APIs, Microservicios, Docker, React, IIS, entre otros.",
     "location": {
       "address": "C. Bartolome Frechi #5",
       "postalCode": "11802",
@@ -17,8 +17,18 @@
     "profiles": [
       {
         "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+        "username": "alanrgomezp",
+        "url": "https://twitter.com/alanrgomezp"
+      },
+      {
+        "network": "Instagram",
+        "username": "alangomezp",
+        "url": "https://instagram.com/alangomezp"
+      },
+      {
+        "network": "Github",
+        "username": "alangomezp",
+        "url": "https://github.com/alangomezp"
       }
     ]
   },
@@ -29,7 +39,7 @@
       "url": "https://company.com",
       "startDate": "2017-01-01",
       "endDate": "2021-01-01",
-      "summary": "Description…",
+      "summary": "Mi trayectoria en el desarrollo web comenzó en esta cadena de supermercados en mi país, donde desempeñé un papel fundamental en el desarrollo de un sistema de gestión de almacén (WMS) basado en web. Esta aplicación optimizó las operaciones de almacén, facilitando la gestión de entradas y despachos de inventario a los supermercados. Además, brindé soporte para varias otras aplicaciones, incluyendo un sistema ERP y un sistema de puntos para clientes.",
       "highlights": ["Started the company"]
     },
     {
@@ -38,7 +48,7 @@
       "url": "https://company.com",
       "startDate": "2021-01-01",
       "endDate": "Actual",
-      "summary": "Description…",
+      "summary": "Actualmente estoy empleado en esta corporación multinacional que opera en Guatemala, Costa Rica y la República Dominicana. Aquí, estoy involucrado en el desarrollo de nuevos módulos para el ERP SAP S4/Hana y colaborando en una aplicación web basada en microservicios.",
       "highlights": ["Started the company"]
     }
   ],
@@ -55,9 +65,19 @@
   ],
   "education": [
     {
+      "institution": "Centro Educativo Divina Providencia",
+      "url": "https://institution.com/",
+      "area": "Bachiller en Técnico de Informatica",
+      "studyType": "Bachelor",
+      "startDate": "2014-01-01",
+      "endDate": "2016-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    },
+    {
       "institution": "Universidad APEC",
       "url": "https://institution.com/",
-      "area": "Software Development",
+      "area": "Ingenieria de Software",
       "studyType": "Bachelor",
       "startDate": "2016-01-01",
       "endDate": "2023-01-01",
@@ -75,9 +95,21 @@
   ],
   "certificates": [
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
+      "name": "Fundamentos de Angular",
+      "date": "2023-11-07",
+      "issuer": "Platzi",
+      "url": "https://certificate.com"
+    },
+    {
+      "name": "C# .NET Basico",
+      "date": "2022-11-07",
+      "issuer": "Instituro Tecnologico de las Americas (ITLA)",
+      "url": "https://certificate.com"
+    },
+    {
+      "name": "Learn React Course",
+      "date": "2022-11-07",
+      "issuer": "Codecademy",
       "url": "https://certificate.com"
     }
   ],
@@ -117,43 +149,35 @@
   ],
   "projects": [
     {
-      "name": "Project",
+      "name": "Anime REST API With Client",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
+      "description": "Se trata de una API que proporciona servicios básicos incluye un archivo denominado 'anime.http' para hacer peticiones.",
+      "highlights": ["Node", "Express", "CSS", "HTML"],
       "url": "https://project.com/"
     },
     {
-      "name": "Project",
+      "name": "Realtime Chatbox",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
+      "description": "Es un chat en tiempo real utilizando la tecnologia de socket.io.",
+      "highlights": ["Node", "Websocket"],
+      "url": "https://github.com/alangomezp/realtime-chatbox"
+    },
+    {
+      "name": "Find Free Port",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Es una solucion para buscar un puerto libre en el localhost.",
+      "highlights": ["Node"],
       "url": "https://project.com/"
     },
     {
-      "name": "Project",
+      "name": "Comando ls",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016", "Html"],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
+      "description": "Esta es una aplicación simple de línea de comandos que imita la funcionalidad del comando ls utilizando Node.js.",
+      "highlights": ["Node"],
       "url": "https://project.com/"
     }
   ]
