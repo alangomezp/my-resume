@@ -126,7 +126,18 @@
     {
       "name": "Web Development",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript", "Astro"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Astro",
+        "Csharp",
+        "Typescript",
+        "Angular",
+        "Tailwind",
+        "Node",
+        "Sql"
+      ]
     }
   ],
   "languages": [
@@ -154,7 +165,7 @@
       "endDate": "2021-01-01",
       "description": "Se trata de una API que proporciona servicios básicos incluye un archivo denominado 'anime.http' para hacer peticiones.",
       "highlights": ["Node", "Express", "CSS", "HTML"],
-      "url": "https://project.com/"
+      "url": "https://github.com/alangomezp/anime-rest-api"
     },
     {
       "name": "Realtime Chatbox",
@@ -170,7 +181,7 @@
       "endDate": "2021-01-01",
       "description": "Es una solucion para buscar un puerto libre en el localhost.",
       "highlights": ["Node"],
-      "url": "https://project.com/"
+      "url": "https://github.com/alangomezp/find-free-port"
     },
     {
       "name": "Comando ls",
@@ -178,7 +189,7 @@
       "endDate": "2021-01-01",
       "description": "Esta es una aplicación simple de línea de comandos que imita la funcionalidad del comando ls utilizando Node.js.",
       "highlights": ["Node"],
-      "url": "https://project.com/"
+      "url": "https://github.com/alangomezp/ls-node-js"
     }
   ]
 }
