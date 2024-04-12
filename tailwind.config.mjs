@@ -5,10 +5,13 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			screens:{
+				'xs': '400px'
+			},
 			keyframes:{
 				appear:{
 					'0%': {
-						transform: 'scale(0.8)'
+						transform: 'scale(0.9)'
 					},
 					'100%': {
 						transform: 'scale(1)'
@@ -19,7 +22,7 @@ export default {
 				}
 			},
 			animation:{
-				appear: 'appear 0.7s ease-in-out '
+				appear: 'appear 0.2s ease-in-out '
 			}
 		},
 	},

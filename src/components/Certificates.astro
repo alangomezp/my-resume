@@ -21,12 +21,12 @@ const { name, date, issuer, url } = Astro.props;
   <p>{name}</p>
 
   <dialog
-    class="backdrop:bg-black backdrop:bg-opacity-50 open:animate-appear"
+    class="backdrop:bg-black backdrop:bg-opacity-50 open:animate-appear rounded-md h-[600px]"
     open={false}
   >
-    <button class="closeBtn absolute right-0 w-6"> <Close /> </button>
+    <button class="closeBtn absolute right-0 m-2 w-6"> <Close /> </button>
     <picture>
-      <img class="pt-6 w-[700px]" src={url} alt="certificado" />
+      <img class="pt-10 w-[700px]" src={url} alt="certificado" />
     </picture>
   </dialog>
   <button class="viewBtn"> view </button>
@@ -40,11 +40,15 @@ const { name, date, issuer, url } = Astro.props;
     item.addEventListener("click", () => {
       const $dialog = item.previousElementSibling as HTMLDialogElement;
       $dialog?.showModal();
-      $dialog.addEventListener("open", () => {
-        const $dialogBackdrop = document.querySelector("dialog.backdrop");
-        console.log($dialogBackdrop);
-        $dialogBackdrop?.addEventListener("click", () => {
-          $dialog.close();
+      const $imgs = document.querySelectorAll("picture>img");
+
+      $imgs.forEach((img) => {
+        img.addEventListener("mouseover", () => {
+          $dialog.onclick = () => {};
+        });
+
+        img.addEventListener("mouseout", () => {
+          $dialog.onclick = () => $dialog.close();
         });
       });
     });
@@ -56,12 +60,4 @@ const { name, date, issuer, url } = Astro.props;
       $dialog?.close();
     });
   });
-
-  // $dialogBackdrop.forEach((item) => {
-  //   item.addEventListener("click", () => {
-  //     console.log(item);
-  //     const $dialog = item as HTMLDialogElement;
-  //     $dialog?.close();
-  //   });
-  // });
 </script>

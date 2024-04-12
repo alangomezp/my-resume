@@ -1,16 +1,16 @@
 {
   "basics": {
-    "name": "Alan Gomez",
-    "label": "Desarrollador Full Stack con mas de 7 años en la industria.",
+    "name": "Alan Gómez",
+    "label": "Desarrollador Full Stack con más de 7 años de experiencia.",
     "image": "https://avatars.githubusercontent.com/alangomezp",
     "email": "alanrgomezp@gmail.com",
     "phone": "+1809-495-1109",
     "url": "https://johndoe.com",
     "summary": "Soy desarrollador web full stack experimentado con +7 años de experiencia práctica. Originario de la República Dominicana, una isla vibrante en el Caribe, traigo conmigo una pasión por el trabajo y un compromiso con la excelencia, enriquecido por mis valores cristianos. A lo largo de mi carrera, he tenido la oportunidad de trabajar con una amplia gama de tecnologías, incluyendo .NET, Angular, MS SQL, SAP ABAP, Restful APIs, Microservicios, Docker, React, IIS, entre otros.",
     "location": {
-      "address": "C. Bartolome Frechi #5",
+      "address": "C. Bartolomé Frechi #5",
       "postalCode": "11802",
-      "city": "Santo Domingo",
+      "city": "Rep. Dom, Santo Domingo",
       "countryCode": "DO",
       "region": "Santo Domingo Este"
     },
@@ -34,7 +34,7 @@
   },
   "work": [
     {
-      "name": "Hipermercados Ole",
+      "name": "Hipermercados Olé",
       "position": "Desarrollador Senior",
       "url": "https://company.com",
       "startDate": "2017-01-01",
@@ -43,7 +43,7 @@
       "highlights": ["Started the company"]
     },
     {
-      "name": "Multiquimica S.A.",
+      "name": "Multiquímica S.A.",
       "position": "Desarrollador de Aplicaciones",
       "url": "https://company.com",
       "startDate": "2021-01-01",
@@ -77,7 +77,7 @@
     {
       "institution": "Universidad APEC",
       "url": "https://institution.com/",
-      "area": "Ingenieria de Software",
+      "area": "Ingenería de Software",
       "studyType": "Bachelor",
       "startDate": "2016-01-01",
       "endDate": "2023-01-01",
@@ -101,9 +101,9 @@
       "url": "./img/alan-angular.png"
     },
     {
-      "name": "C# .NET Basico",
+      "name": "C# .NET Básico",
       "date": "2022-11-07",
-      "issuer": "Instituro Tecnologico de las Americas (ITLA)",
+      "issuer": "Instituro Tecnológico de las Américas (ITLA)",
       "url": "./img/alan-csharp.png"
     },
     {
@@ -171,7 +171,7 @@
       "name": "Realtime Chatbox",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Es un chat en tiempo real utilizando la tecnologia de socket.io.",
+      "description": "Es un chat en tiempo real utilizando la tecnología de socket.io.",
       "highlights": ["Node", "Websocket"],
       "url": "https://github.com/alangomezp/realtime-chatbox"
     },
@@ -179,7 +179,7 @@
       "name": "Find Free Port",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Es una solucion para buscar un puerto libre en el localhost.",
+      "description": "Es una solución para buscar un puerto libre en el localhost.",
       "highlights": ["Node"],
       "url": "https://github.com/alangomezp/find-free-port"
     },
@@ -190,6 +190,14 @@
       "description": "Esta es una aplicación simple de línea de comandos que imita la funcionalidad del comando ls utilizando Node.js.",
       "highlights": ["Node"],
       "url": "https://github.com/alangomezp/ls-node-js"
+    },
+    {
+      "name": "My Resume",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Es este mismo curriculum digital basado en el diseño de Bartosz Jarocki, pero éste lo hice desde 0 como práctica.",
+      "highlights": ["Astro", "JavaScript"],
+      "url": "https://github.com/alangomezp/my-resume"
     }
   ]
 }
