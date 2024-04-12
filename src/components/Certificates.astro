@@ -1,4 +1,6 @@
 ---
+import Close from "@/iconos/Close.astro";
+
 interface Props {
   name: string;
   date: string;
@@ -17,4 +19,49 @@ const { name, date, issuer, url } = Astro.props;
     </span>
   </div>
   <p>{name}</p>
+
+  <dialog
+    class="backdrop:bg-black backdrop:bg-opacity-50 open:animate-appear"
+    open={false}
+  >
+    <button class="closeBtn absolute right-0 w-6"> <Close /> </button>
+    <picture>
+      <img class="pt-6 w-[700px]" src={url} alt="certificado" />
+    </picture>
+  </dialog>
+  <button class="viewBtn"> view </button>
 </article>
+
+<script>
+  const $viewCertificateBtns = document.querySelectorAll("button.viewBtn");
+  const $closeBtns = document.querySelectorAll("button.closeBtn");
+
+  $viewCertificateBtns.forEach((item) => {
+    item.addEventListener("click", () => {
+      const $dialog = item.previousElementSibling as HTMLDialogElement;
+      $dialog?.showModal();
+      $dialog.addEventListener("open", () => {
+        const $dialogBackdrop = document.querySelector("dialog.backdrop");
+        console.log($dialogBackdrop);
+        $dialogBackdrop?.addEventListener("click", () => {
+          $dialog.close();
+        });
+      });
+    });
+  });
+
+  $closeBtns.forEach((item) => {
+    item.addEventListener("click", () => {
+      const $dialog = item.parentElement as HTMLDialogElement;
+      $dialog?.close();
+    });
+  });
+
+  // $dialogBackdrop.forEach((item) => {
+  //   item.addEventListener("click", () => {
+  //     console.log(item);
+  //     const $dialog = item as HTMLDialogElement;
+  //     $dialog?.close();
+  //   });
+  // });
+</script>

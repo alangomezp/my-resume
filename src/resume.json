@@ -98,19 +98,19 @@
       "name": "Fundamentos de Angular",
       "date": "2023-11-07",
       "issuer": "Platzi",
-      "url": "https://certificate.com"
+      "url": "./img/alan-angular.png"
     },
     {
       "name": "C# .NET Basico",
       "date": "2022-11-07",
       "issuer": "Instituro Tecnologico de las Americas (ITLA)",
-      "url": "https://certificate.com"
+      "url": "./img/alan-csharp.png"
     },
     {
       "name": "Learn React Course",
       "date": "2022-11-07",
       "issuer": "Codecademy",
-      "url": "https://certificate.com"
+      "url": "./img/alan-react.png"
     }
   ],
   "publications": [
