@@ -8,7 +8,7 @@
     "url": "https://johndoe.com",
     "summary": "Soy desarrollador web full stack experimentado con +7 años de experiencia práctica. Originario de la República Dominicana, una isla vibrante en el Caribe, traigo conmigo una pasión por el trabajo y un compromiso con la excelencia, enriquecido por mis valores cristianos. A lo largo de mi carrera, he tenido la oportunidad de trabajar con una amplia gama de tecnologías, incluyendo .NET, Angular, MS SQL, SAP ABAP, Restful APIs, Microservicios, Docker, React, IIS, entre otros.",
     "location": {
-      "address": "C. Bartolomé Frechi #5",
+      "address": "",
       "postalCode": "11802",
       "city": "Rep. Dom, Santo Domingo",
       "countryCode": "DO",
@@ -136,7 +136,8 @@
         "Angular",
         "Tailwind",
         "Node",
-        "Sql"
+        "Sql",
+        "React"
       ]
     }
   ],

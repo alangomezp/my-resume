@@ -9,6 +9,7 @@ import Sql from "@/iconos/Sql.astro";
 import Typescript from "@/iconos/Typescript.astro";
 import NotFound from "@/iconos/NotFound.astro";
 import Astro from "@/iconos/Astro.astro";
+import React from "@/iconos/React.astro";
 
 export default function GetSkillIcon(skill: string) {
   switch (skill) {
@@ -32,6 +33,8 @@ export default function GetSkillIcon(skill: string) {
       return Typescript;
     case "astro":
       return Astro;
+    case "react":
+      return React;
     default:
       return NotFound;
   }

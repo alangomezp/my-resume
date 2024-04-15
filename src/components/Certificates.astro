@@ -29,7 +29,9 @@ const { name, date, issuer, url } = Astro.props;
       <img class="pt-10 w-[700px]" src={url} alt="certificado" />
     </picture>
   </dialog>
-  <button class="viewBtn"> view </button>
+  <button class="viewBtn transition ease-in hover:underline hover:scale-105">
+    Ver
+  </button>
 </article>
 
 <script>
@@ -48,6 +50,10 @@ const { name, date, issuer, url } = Astro.props;
         });
 
         img.addEventListener("mouseout", () => {
+          $dialog.onclick = () => $dialog.close();
+        });
+
+        img.addEventListener("touchstart", () => {
           $dialog.onclick = () => $dialog.close();
         });
       });

@@ -15,9 +15,7 @@ const { name, label, location, profiles } = basics;
     <Title text={name} />
     <p class="text-lg font-sans text-zinc-900">{label}</p>
     <span class="flex flex-row gap-2 items-center text-zinc-500">
-      <span class="block w-4"><Globe /></span>{
-        `${location.city}, ${location.address}`
-      }
+      <span class="block w-4"><Globe /></span>{`${location.city}`}
     </span>
     <div class="flex flex-row gap-4 py-1">
       <a
