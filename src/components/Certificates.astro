@@ -29,7 +29,9 @@ const { name, date, issuer, url } = Astro.props;
       <img class="pt-10 w-[700px]" src={url} alt="certificado" />
     </picture>
   </dialog>
-  <button class="viewBtn transition ease-in hover:underline hover:scale-105">
+  <button
+    class="viewBtn transition ease-in hover:underline hover:scale-105 print:hidden"
+  >
     Ver
   </button>
 </article>

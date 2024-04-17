@@ -1,12 +1,15 @@
 ---
 import Section from "./Section.astro";
-import { projects } from "@resume";
+import { projects, basics } from "@resume";
 import Subtitle from "./Subtitle.astro";
 import ProjectCard from "./ProjectCard.astro";
+
+const {profiles} = basics
 ---
 
 <Section>
   <Subtitle text="Proyectos" />
+  <p class="hidden print:block">{profiles[2].url}</p>
   <article class="grid grid-cols-3 gap-5 w-full">
     {
         projects.map((project) => {
