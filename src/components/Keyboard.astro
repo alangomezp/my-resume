@@ -1,4 +1,5 @@
 ---
+import CommandPallete from "@/iconos/CommandPallete.astro";
 import { basics } from "@resume";
 
 const { profiles } = basics;
@@ -131,11 +132,23 @@ const profilesDataForNinjaKeys = profiles.map(({ network, url }) => {
 });
 ---
 
-<footer class="fixed bottom-0 bg-slate-50 w-full text-center p-1 print:hidden">
+<footer
+  class="fixed bottom-0 bg-slate-50 w-full text-center p-1 print:hidden hidden lg:block"
+>
   Abrir paleta de comandos
   <kbd class="bg-slate-200 p-1 rounded-md">Cmd</kbd> +
   <kbd class="bg-slate-200 p-1 rounded-md">K</kbd>
 </footer>
+
+<footer class="fixed bottom-0 right-0 m-5 lg:hidden print:hidden">
+  <button
+    id="mobile-btn"
+    class="bg-slate-100 rounded-xl hover:scale-105 transition ease-in duration-200"
+  >
+    <CommandPallete />
+  </button>
+</footer>
+
 <ninja-keys
   class="print:hidden"
   data-profiles={JSON.stringify(profilesDataForNinjaKeys)}
@@ -153,7 +166,25 @@ const profilesDataForNinjaKeys = profiles.map(({ network, url }) => {
     handler: () => void;
     url: string;
   }
-  const ninja = document.querySelector("ninja-keys");
+  interface NinjaElement extends Element {
+    openHotkey: string;
+    data: Array<any>;
+  }
+  const ninja = document.querySelector("ninja-keys") as NinjaElement;
+  const keyboardEvent = new KeyboardEvent("keydown", {
+    key: "K",
+    code: "KeyK",
+    keyCode: 75,
+    which: 75,
+    ctrlKey: true,
+    altKey: false,
+    shiftKey: false,
+    metaKey: false,
+  });
+  const mobileButton = document.getElementById("mobile-btn");
+  mobileButton!.addEventListener("click", () => {
+    document.dispatchEvent(keyboardEvent);
+  });
   const ICONS = {
     print: `<svg style="margin:5px; width:16px; height:16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path stroke="#000000" stroke-linejoin="round" stroke-width="2" d="M8 17H5a1 1 0 01-1-1v-5a2 2 0 012-2h12a2 2 0 012 2v5a1 1 0 01-1 1h-3M8 4h8v5H8V4zm0 11h8v4H8v-4z"></path> <circle cx="7" cy="12" r="1" fill="#000000"></circle> </g></svg>`,
   };
