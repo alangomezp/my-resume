@@ -7,7 +7,7 @@ import Globe from "@/iconos/Globe.astro";
 import LinkedIn from "@/iconos/LinkedIn.astro";
 import X from "@/iconos/X.astro";
 
-const { name, label, location, profiles } = basics;
+const { name, label, location, profiles, email } = basics;
 ---
 
 <section class="flex flex-row p-5 w-full justify-between">
@@ -17,6 +17,8 @@ const { name, label, location, profiles } = basics;
     <span class="flex flex-row gap-2 items-center text-zinc-500">
       <span class="block w-4"><Globe /></span>{`${location.city}`}
     </span>
+    <span class="text-zinc-500"> {email}</span>
+
     <div class="hidden py-1 print:block">
       <p>{profiles[3].url}</p>
     </div>
